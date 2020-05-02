@@ -3,17 +3,6 @@ class InversionsCounter(object):
         self.res = [];
         self.inversions = 0;
 
-    def readResultFile(self, f = ""):
-        if not f:
-            return
-        else:
-            # open and read document to buffer:
-            with open(f, "r") as p:
-                for line in p:
-                    return int(line)
-            p.close()
-
-
     def readFile(self, f = ""):
         if not f:
             return
