@@ -1,4 +1,4 @@
-from InversionsCounter import Inversions
+from MergeSort import Inversions
 def runInversions (fileIn):
     print(fileIn + ":")
 
