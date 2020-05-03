@@ -33,9 +33,8 @@ class comparisonCounter(object):
         self.quickSort(p + 1, r, pType)
 
     def partition(self, l, r):
-        self.comparisons += r - l
-
         i = l
+        self.comparisons += r - l
         for j in range(l + 1, r + 1):
             if self.res[j] < self.res[l]:
                 i += 1
