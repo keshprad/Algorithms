@@ -8,6 +8,7 @@ def runComparisons(fileIn):
     compare.readFile(fileIn)
 
     # Leftmost pivot
+    compare.reset()
     print("using leftmost pivot:")
     print("\tinput = " + str(compare.res))
     compare.quickSort(0, len(compare.input) - 1, 1)
