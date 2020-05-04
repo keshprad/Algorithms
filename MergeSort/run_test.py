@@ -17,5 +17,5 @@ runInversions("test2.txt")
 runInversions("test3.txt")
 runInversions("test4.txt")
 runInversions("test5.txt")
-#runInversions("finalCase.txt")
+# runInversions("finalCase.txt") #Comment out when testing code. This file is just too damn long
 
