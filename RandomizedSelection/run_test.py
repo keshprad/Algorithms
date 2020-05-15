@@ -16,9 +16,18 @@ def runComparisons(fileIn, i):
 
 
 #######################
-runComparisons("test1.txt", 1)
-runComparisons("test2.txt", 2)
-# runComparisons("test3.txt")
-# runComparisons("test4.txt")
-# runComparisons("test5.txt")
-# runComparisons("finalCase.txt")
+runComparisons("5Nums.txt", 1)
+runComparisons("5Nums.txt", 3)
+runComparisons("5Nums.txt", 5)
+
+runComparisons("20Nums.txt", 7)
+runComparisons("20Nums.txt", 12)
+runComparisons("20Nums.txt", 20)
+
+runComparisons("100Nums.txt", 20)
+runComparisons("100Nums.txt", 75)
+runComparisons("100Nums.txt", 100)
+
+runComparisons("1000Nums.txt", 5)
+runComparisons("1000Nums.txt", 100)
+runComparisons("1000Nums.txt", 976)
