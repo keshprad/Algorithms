@@ -33,8 +33,8 @@ def runComparisons(fileIn):
 
 
 #######################
+runComparisons("finalCase.txt")
 runComparisons("test1.txt")
-runComparisons("test2.txt")
 runComparisons("test3.txt")
 runComparisons("test4.txt")
 runComparisons("test5.txt")

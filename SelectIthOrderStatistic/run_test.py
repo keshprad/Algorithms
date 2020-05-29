@@ -1,4 +1,4 @@
-from RandomizedSelection import Selection
+from SelectIthOrderStatistic import Selection
 
 def runComparisons(fileIn, i):
     print(fileIn + ":")
