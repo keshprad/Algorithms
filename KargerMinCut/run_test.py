@@ -16,7 +16,7 @@ def runKarger(fileIn):
         print('trial #{}:'
               '\n\t'
               'current min-cuts: {}'.format(i + 1, minCuts))
-    print("\nAfter %s trials, min-cuts: %s" % (numTrials, minCuts))
+    print("\nAfter %s trials, min-cuts: %s\n\n" % (numTrials, minCuts))
 
 
 #######################

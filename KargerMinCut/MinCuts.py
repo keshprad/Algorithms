@@ -12,7 +12,7 @@ class MinCuts:
             adjacents = [int(each) for each in line.split()];
 
             # find key value
-            key = adjacents[0];
+            key = adjacents[0]
 
             # Set graph
             graph[key] = adjacents[1:]
