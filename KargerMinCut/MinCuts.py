@@ -6,8 +6,8 @@ class MinCuts:
         self.allVertices = self.readInput(filePath)
 
     def readInput(self, filePath):
-        fin = open(filePath)
-        graph = {}
+        fin, graph = open(filePath), {}
+        
         for line in fin:
             adjacents = [int(each) for each in line.split()];
 
