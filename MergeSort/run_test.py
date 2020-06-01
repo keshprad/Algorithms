@@ -12,8 +12,8 @@ def runInversions (fileIn):
 
 
 #######################
-runInversions("finalCase.txt")
 runInversions("test1.txt")
+runInversions("test2.txt")
 runInversions("test3.txt")
 runInversions("test4.txt")
 runInversions("test5.txt")
