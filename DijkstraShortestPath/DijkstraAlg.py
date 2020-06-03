@@ -1,14 +1,15 @@
 class DijkstraShortestPath:
     def __init__(self, filePath):
-        self.graph, self.minimums = self.readFile(filePath)
+        self.graph, self.minimums, self.path = self.readFile(filePath)
 
     def readFile(self, filePath):
-        fin, graph, minimums = open(filePath), {}, {}
+        fin = open(filePath)
+        graph, minimums, path = {}, {}, {}
 
         for line in fin:
             line = line.replace(',', ' ').split()
             key = int(line[0])
-            graph[key], minimums[key] = [], float('inf')
+            graph[key], minimums[key], path[key] = [], float('inf'), ''
 
             counter = 0
             curr = []
@@ -18,10 +19,11 @@ class DijkstraShortestPath:
                     graph[key].append(curr)
                     curr = []
                 counter += 1
-        return graph, minimums
+        return graph, minimums, path
 
     def findShortestPaths(self, source=1):
         self.minimums[source] = 0
+        self.path[source] = str(source)
         unvisited = list(self.minimums.keys())
 
         self.useDijkstra(source, unvisited)
@@ -40,6 +42,7 @@ class DijkstraShortestPath:
 
                 if self.minimums[adj_vertex] > dist:
                     self.minimums[adj_vertex] = dist
+                    self.path[adj_vertex] = self.path[vertex] + ' -> ' + str(adj_vertex)
 
         unvisited.remove(vertex)
         self.useDijkstra(self.nextVertex(unvisited), unvisited)

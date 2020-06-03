@@ -10,7 +10,8 @@ def runDijkstra(fileIn):
     print("\tinput = ", str(Dijkstra.graph) + '\n')
 
     Dijkstra.findShortestPaths()
-    print("\tShortest path from Vertex 1:\n\t\t", Dijkstra.minimums, "\n")
+    print("\tLength of shortest path from Vertex 1:\n\t\t", Dijkstra.minimums, "\n")
+    print("\tShortest path from Vertex 1:\n\t\t", Dijkstra.path, "\n")
 
     ex_vertex = list(Dijkstra.minimums.keys())[-1]
     print("\tExample: Distance from Vertex #1 to Vertex #" + str(ex_vertex) + " is " + str(Dijkstra.minimums[ex_vertex])
