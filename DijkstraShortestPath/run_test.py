@@ -14,8 +14,9 @@ def runDijkstra(fileIn):
     print("\tShortest path from Vertex 1:\n\t\t", Dijkstra.path, "\n")
 
     ex_vertex = list(Dijkstra.minimums.keys())[-1]
-    print("\tExample: Distance from Vertex #1 to Vertex #" + str(ex_vertex) + " is " + str(Dijkstra.minimums[ex_vertex])
-          + "\n\n")
+    print("\tExample:")
+    print("\t\tDistance from Vertex #1 to Vertex #" + str(ex_vertex) + " is " + str(Dijkstra.minimums[ex_vertex]))
+    print("\t\tPath from Vertex #1 to Vertex #" + str(ex_vertex) + " is " + Dijkstra.path[ex_vertex] + "\n\n")
 
 
 #######################
