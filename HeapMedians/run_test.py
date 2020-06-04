@@ -1,11 +1,11 @@
-from HeapMedians import ContinuousMedian
+from HeapMedians import RunningMedians
 
 
 def runRunningMedians(fileIn):
     print(fileIn + ":")
 
     fileIn = "testCases/" + fileIn
-    Medians = ContinuousMedian.HeapMedians()
+    Medians = RunningMedians.HeapMedians()
 
     Medians.findRunningMedians(fileIn)
     print("\tMedians after inserting each element:\n\t\t" + str(Medians.running_medians))
