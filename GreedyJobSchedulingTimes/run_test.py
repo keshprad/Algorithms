@@ -1,4 +1,4 @@
-from GreedyWeightedCompletionTimes import Scheduling
+from GreedyJobSchedulingTimes import Scheduling
 
 
 def runRunningMedians(fileIn):
