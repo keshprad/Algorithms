@@ -9,7 +9,7 @@ def runGreedyScheduling(fileIn):
 
     ratioTime, diffTime = greedyTime.findMinCompletionTimes()
 
-    print("\tMinimum Weighted Completion Times:")
+    print("\tMinimum Time:")
     print("\t\tWhen ordered decreasing with w - l: " + str(diffTime))
     print("\t\tOptimal time -> When ordered decreasing with w / l: " + str(ratioTime) + "\n")
 
