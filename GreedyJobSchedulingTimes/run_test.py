@@ -1,7 +1,7 @@
 from GreedyJobSchedulingTimes import Scheduling
 
 
-def runRunningMedians(fileIn):
+def runGreedyScheduling(fileIn):
     print(fileIn + ":")
 
     fileIn = "testCases/" + fileIn
@@ -14,9 +14,9 @@ def runRunningMedians(fileIn):
     print("\t\tOptimal time -> When ordered decreasing with w / l: " + str(ratioTime) + "\n")
 
 #######################
-runRunningMedians("test1.txt")
-runRunningMedians("test2.txt")
-runRunningMedians("test3.txt")
-runRunningMedians("test4.txt")
-runRunningMedians("test5.txt")
-runRunningMedians("jobs.txt")
+runGreedyScheduling("test1.txt")
+runGreedyScheduling("test2.txt")
+runGreedyScheduling("test3.txt")
+runGreedyScheduling("test4.txt")
+runGreedyScheduling("test5.txt")
+runGreedyScheduling("jobs.txt")
