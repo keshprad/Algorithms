@@ -6,7 +6,7 @@ class TestUnionFind:
     def __init__(self, clusterInput):
         self.clusterInput = clusterInput
         self.uf = UnionFind.UnionFind(clusterInput)
-        print(self.uf.graph)
+        print("Initial cluster graph", self.uf.graph, "\n")
 
     def testUnion(self):
         keys = list(self.uf.graph.keys())
@@ -15,15 +15,15 @@ class TestUnionFind:
         print("Running union on", str(vert1), "and", str(vert2) + "...")
 
         self.uf.union(vert1, vert2)
-        print(self.uf.graph)
+        print("Resulting graph:", self.uf.graph, "\n")
 
     def testFind(self):
         keys = list(self.uf.graph.keys())
         vert1 = keys[random.randint(0, len(keys) - 1)]
         print("Running find on", str(vert1) + "...")
 
-        print(self.uf.find(vert1))
-        print(self.uf.graph)
+        print("Parent:", str(self.uf.find(vert1)))
+        print("Resulting graph:", self.uf.graph, "\n")
 
 
 #######################
