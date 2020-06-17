@@ -4,6 +4,8 @@ class UnionFind:
         self.graph = {}
         # ranks simply represents an upper bound on the tree level since they get offset by the path compression
         self.ranks = {}
+        # amount of current clusters
+        self.currClusters = len(clusterInput)
 
         for cluster in clusterInput:
             if len(cluster) > 0:
@@ -40,6 +42,7 @@ class UnionFind:
             else:
                 self.graph[parent1] = parent2
                 self.ranks[parent2] = max(self.ranks[parent1] + 1, self.ranks[parent2])
+            self.currClusters -= 1
 
     def pathCompression(self, compress_list, parent):
         for vertex in compress_list:
