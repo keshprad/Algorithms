@@ -8,10 +8,10 @@ class comparisonCounter(object):
         self.res = self.input.copy()
         self.comparisons = 0
 
-    def readFile(self, f=""):
-        if not f:
+    def readFile(self, fileIn=""):
+        if not fileIn:
             return
-        with open(f, "r") as p:
+        with open(fileIn, "r") as p:
             for line in p:
                 self.input.append(int(line))
         p.close()

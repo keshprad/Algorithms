@@ -3,10 +3,8 @@ from QuickSort import Comparisons
 
 class randSelection(Comparisons.comparisonCounter):
     def __init__(self):
-        self.input = []
-        self.res = []
+        super().__init__()
         self.ithStat = 0
-        self.comparisons = 0
 
     def findIthStatistic(self, l, r, i):
         i -= 1

@@ -44,6 +44,11 @@ class UnionFind:
                 self.ranks[parent2] = max(self.ranks[parent1] + 1, self.ranks[parent2])
             self.currClusters -= 1
 
-    def pathCompression(self, compress_list, parent):
+    def pathCompression(self, compress_list, parent=None):
+        # Assumes all vertices in compress_list have the same parent and that the list is not empty
+
+        if parent is None:
+            parent = self.find(compress_list[0])
+
         for vertex in compress_list:
             self.graph[vertex] = parent

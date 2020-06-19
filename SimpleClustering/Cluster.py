@@ -3,8 +3,7 @@ from UnionFind_DisjointSet import UnionFind
 
 class ClusterFinder:
     def __init__(self, fileName):
-        self.edgeCosts, self.vertices = self.readFile(fileName)
-        self.union_find = UnionFind.UnionFind(self.vertices)
+        self.edgeCosts, self.vertices, self.union_find = self.readFile(fileName)
 
         self.k = float("inf")
         while self.k > self.union_find.currClusters:
@@ -39,7 +38,7 @@ class ClusterFinder:
                     vertices.append([currEdge[0]])
                 if [currEdge[1]] not in vertices:
                     vertices.append([currEdge[1]])
-        return edgeCosts, vertices
+        return edgeCosts, vertices, UnionFind.UnionFind(vertices)
 
     def findClusters(self):
         keys = list(sorted(self.edgeCosts.keys()))
