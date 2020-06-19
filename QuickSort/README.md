@@ -1,6 +1,6 @@
 ## QuickSort  
 _**About**_  
-This algorithms sorts elements in increasing order given a file of integers.  
+Given a file of integers, this algorithm sorts elements in increasing order in O(nlog(n)) running time.  
 
 ---  
 
