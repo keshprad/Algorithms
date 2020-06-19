@@ -6,8 +6,8 @@ This is a greedy clustering algorithm that clusters graph data points into k clu
 
 _**Methods**_  
 - [readFile(fileName)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/SimpleClustering/Cluster.py#L20 )  
-    - Takes in parameters for a path to the input file.
-    - Constructs and returns a dictionary of cost: edges.  
+    - Takes in a parameter for a path to the input file _fileName_.
+    - Constructs and returns a dictionary of format {cost: edges}.  
     - Constructs and returns a [Union Find data structure]( https://github.com/keshprad/Algorithms/tree/master/UnionFind_DisjointSet ) with all vertices in separate clusters
 - [findClusters()]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/SimpleClustering/Cluster.py#L43 )  
     - Greedily groups data points into clusters.  
