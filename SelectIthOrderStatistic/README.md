@@ -1,4 +1,4 @@
-## Selecting the Ith Order Statistic
+## Selecting the i-th Order Statistic
 _**About**_  
 This algorithms finds the i-th order statistic, the i-th smallest number, in a given file of integers.
 
