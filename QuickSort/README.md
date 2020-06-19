@@ -15,11 +15,31 @@ _**How it works**_
 ---  
 
 _**Methods**_  
-- reset  
-- readFile(fileIn)  
-- quicksort(l, r, pType)  
-- partition(l, r)  
-- choose3MedianPivot(l, r)  
+- [reset()]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/QuickSort/Comparisons.py#L7 )  
+    - Resets the object in order to reuse the same object for another partition method.  
+- [readFile(fileIn)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/QuickSort/Comparisons.py#L11 )
+    - Takes in parameters for fileIn, a path to an input file.
+    - Reads the file of integers and appends each integers to the self.input() array.  
+- [quicksort(l, r, pType)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/QuickSort/Comparisons.py#L21 )  
+    - Takes in as parameters l, r, and pType
+        - l and r define the range of indices we are currently looking at.  
+        - pType defines the type of pivot we will use.  
+            - 1 for the leftmost element as pivot
+            - 2 for the rightmost element as pivot
+            - 3 to invoke the [choose3MedianPivot(...)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/QuickSort/Comparisons.py#L45 )
+    - This method serves as the main method for this algorithm.  
+    - Partitions about a pivot to sort the pivot to its correct location.  
+    - Recursively partitions about the left and right sides of the pivot.  
+- [partition(l, r)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/QuickSort/Comparisons.py#L35 )  
+    - Takes in parameters for l and r that define the left and right bounds of the indices we are currently looking at.  
+    - Assumes the [quicksort(...)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/QuickSort/Comparisons.py#L21 ) method has put the pivot at index l.  
+    - Sorts elements to the left of a pointer if less than the pivot and to the right if greater.  
+    - Swaps the pivot to the pointer position.  
+    - Returns the new position of the pivot.  
+- [choose3MedianPivot(l, r)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/QuickSort/Comparisons.py#L45 )  
+    - Takes in parameters for l and r that define the left and right bounds of the indices we are currently looking at.  
+    - Looks at the elements at indices l, r, and (l+r)//2.  
+        - Determines the median of the elements at these indices, and returns its index.
 
 ---  
 
@@ -31,7 +51,7 @@ The input file describes an array of numbers. It uses the following format:
 \[num3\]  
 ...  
 
-[Example Input File]( https://github.com/keshprad/Algorithms/blob/master/SelectIthOrderStatistic/testCases/1000Nums.txt )  
+[Example Input File]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/QuickSort/testCases/test5.txt )  
 
 ---  
 

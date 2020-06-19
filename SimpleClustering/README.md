@@ -5,9 +5,15 @@ This is a greedy clustering algorithm that clusters graph data points into k clu
 ---  
 
 _**Methods**_  
-- readFile(fileName)  
-- findClusters()  
-- findSpacing()  
+- [readFile(fileName)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/SimpleClustering/Cluster.py#L20 )  
+    - Takes in parameters for a path to the input file.
+    - Constructs and returns a dictionary of cost: edges.  
+    - Constructs and returns a [Union Find data structure]( https://github.com/keshprad/Algorithms/tree/master/UnionFind_DisjointSet ) with all vertices in separate clusters
+- [findClusters()]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/SimpleClustering/Cluster.py#L43 )  
+    - Greedily groups data points into clusters.  
+    - Starts with the lowest cost edges and if an edge connects vertices that are in different clusters, it will join the clusters by invoking union(...) from the [Union Find data structure]( https://github.com/keshprad/Algorithms/tree/master/UnionFind_DisjointSet ).  
+- [findSpacing()]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/SimpleClustering/Cluster.py#L58 )  
+    - Goes through every edge and returns the cost of the shortest edge that spans across multiple clusters.  
 
 ---  
 
