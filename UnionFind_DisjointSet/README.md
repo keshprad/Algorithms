@@ -16,7 +16,7 @@ _**Methods**_
 - [union(vertex1, vertex2)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/UnionFind_DisjointSet/UnionFind.py#L34 )  
 	- Takes in parameters for 2 vertices: _vertex1_, _vertex2_.  
 	- Does nothing if _vertex1_ and _vertex2_ are members of the same cluster.  
-		- Invokes find(...) to check cluster heads.  
+		- Invokes [find(...)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/UnionFind_DisjointSet/UnionFind.py#L22 ) to check cluster heads.  
 	- Merges the two clusters in constant running time by updating the parent pointer of one of the cluster heads to the other cluster head.  
 - [pathCompression(compress_list, parent)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/UnionFind_DisjointSet/UnionFind.py#L47 )  
 	- Takes in parameters for a list of vertices _compress\_list_ and a _parent_.  

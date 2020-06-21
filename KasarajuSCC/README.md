@@ -19,7 +19,7 @@ _**Methods**_
 - [readFile(filePath)]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/KasarajuSCC/SCC.py#L10 )
     - Takes in a path to an input file _filePath_ containing edges to a directed graph.  
     - Returns a graph which has a dictionary for each vertex with all inward and outward edges represented and a boolean to indicate if a vertex had been visited.  
-- [findSCC()]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/KasarajuSCC/SCC.py#L10 )
+- [findSCC()]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/KasarajuSCC/SCC.py#L36 )
     - Serves as the main method for this algorithm.  
     - Invokes [DFS_Loop(...)]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/KasarajuSCC/SCC.py#L58 ) with reversed=True to find the finishing times of DFS for each node.  
     - Invokes [replaceFinishingTimes(...)]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/KasarajuSCC/SCC.py#L73 ) to replace node values with their finishing times from the previous call to [DFS_Loop(...)]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/KasarajuSCC/SCC.py#L58 ).  
