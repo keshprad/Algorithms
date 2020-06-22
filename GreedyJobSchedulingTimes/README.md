@@ -12,7 +12,7 @@ _**How it works**_
     1. If we are running the algorithm of differences(_weight_-_length_), the order in which we handle ties matters. We will handle ties by taking the maximum weighted jobs first.
         1. The differences algorithm will not output an optimal solution. It's just there to show as example that it shouldn't work.
 
-1. Next, we calculate the time the jobs will take. Each job takes (_weight_*_currLength_) time.  
+1. Next, we calculate the time the jobs will take. Each job takes (_weight_\*_currLength_) time.  
     1. _currLength_ is the sum of lengths of all jobs that have previously executed and the length of the current job.
 
 ---  
@@ -40,7 +40,7 @@ _**Methods**_
 - [findTime(unordered, ordered)]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/GreedyJobSchedulingTimes/Scheduling.py#L45 )  
     - Takes two parameters: _unordered_, a dictionary with all ratios(or diffs) and the elements that have that ratio, and _ordered_, a list of all ratios(or diffs) sorted max to min.  
     - If there are multiple elements with the same ratio(or diff), we settle this by picking them in order of maximum weight.  
-    - Finally, each job takes time _weight_*_currLength_.
+    - Finally, each job takes time _weight_\*_currLength_.
 
 ---  
 

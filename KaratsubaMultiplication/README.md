@@ -22,15 +22,10 @@ _**Methods**_
             - We can recursively call on multiplyNumbers to solve these.  
             - Our base condition would be having 1 digit numbers.  
         - After all the recursive calls, we can calculate the following, giving us our answer.  
-            - _ac_*(10^s1) + _bd_ + (_diff_*(10^(s1//2)))  
+            - _ac_\*(10^s1) + _bd_ + (_diff_\*(10^(s1//2)))  
                 - For this, let's assume that _s1_ is the number of digits in _n1_.  
 
 ---  
 
 _**Input**_  
 The method takes 2 integer parameters _n1_, _n2_. I've made it such that the run_test.py file takes user input before running Karatsuba's Algorithm.  
-
----  
-
-_**Applications**_  
-- [SelectIthOrderStatistic]( https://github.com/keshprad/Algorithms/tree/master/SelectIthOrderStatistic )  

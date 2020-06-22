@@ -20,7 +20,7 @@ _**Methods**_
 - [findMinSpanningTree()]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/PrimMinSpanningTree/PrimAlg.py#L23 )  
     - This method serves as the main method for this algorithm.  
     - Invokes [sortCosts(...)]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/PrimMinSpanningTree/PrimAlg.py#L48 ) to sort self.costs in increasing order by value.  
-    - Invokes [findUnvisited(...)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/QuickSort/Comparisons.py#L45 ) to find all the initially unvisited nodes.  
+    - Invokes [findUnvisited(...)]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/PrimMinSpanningTree/PrimAlg.py#L51 ) to find all the initially unvisited nodes.  
     - While there are unvisited nodes, the algorithm looks at the smallest cost unvisited edge that has one node in the current tree and one node not in the current tree.  
         - Adds it to our spanning tree and adds its cost to our overall cost.  
         - Updates the visited/unvisited lists to ensure the while loops exit condition

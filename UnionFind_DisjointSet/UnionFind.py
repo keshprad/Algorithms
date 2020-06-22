@@ -52,3 +52,13 @@ class UnionFind:
 
         for vertex in compress_list:
             self.graph[vertex] = parent
+
+    def getGraph(self):
+        toPrint = {}
+        for node in self.graph:
+            parent = self.find(node)
+            if parent not in toPrint:
+                toPrint[parent] = [node]
+            else:
+                toPrint[parent].append(node)
+        return str(list(toPrint.values()))

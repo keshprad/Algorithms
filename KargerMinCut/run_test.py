@@ -12,11 +12,13 @@ def runKarger(fileIn):
     minCuts = 100000000000000000
     numTrials = 50
     for i in range(numTrials):
-        minCuts = min(Karger.KargerMinCut(), minCuts)
+        cut = Karger.KargerMinCut()
+        if cut < minCuts:
+            minCuts = cut
         print('trial #{}:'
               '\n\t'
               'current min-cuts: {}'.format(i + 1, minCuts))
-    print("\nAfter %s trials, min-cuts: %s\n\n" % (numTrials, minCuts))
+    print("\nAfter %s trials, # of min-cuts: %s" % (numTrials, minCuts))
 
 
 #######################

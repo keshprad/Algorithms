@@ -22,7 +22,9 @@ _**Methods**_
 	- Takes in parameters for a list of vertices _compress\_list_ and a _parent_.  
 	- Updates the parent headers of all vertices in _compress\_list_ to point to the _parent_.  
 	- This helps improve the running time of the find(...) method. It reduces the amount of hops to get from a vertex in _compress\_list_ to the cluster header.  
-
+- [getGraph()]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/UnionFind_DisjointSet/UnionFind.py#L56 )
+    - Prints the graph of clusters in an easier to understand notation.  
+    
 ---  
 
 _**Input**_  

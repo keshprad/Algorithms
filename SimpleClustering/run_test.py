@@ -11,7 +11,7 @@ def runClustering(fileIn):
     spacing = c.findSpacing()
 
     print("\tResulting " + str(c.k) + "-clustering:")
-    print("\t\t" + str(c.union_find.graph))
+    print("\t\t" + str(c.union_find.getGraph()))
     print("\tMax spacing of the " + str(c.k) + "-clustering: " + str(spacing) + "\n")
 
 

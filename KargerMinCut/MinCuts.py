@@ -1,6 +1,7 @@
 import random
 import copy
 
+
 class MinCuts:
     def __init__(self, filePath):
         self.allVertices = self.readInput(filePath)
@@ -9,7 +10,7 @@ class MinCuts:
         fin, graph = open(filePath), {}
         
         for line in fin:
-            adjacents = [int(each) for each in line.split()];
+            adjacents = [int(each) for each in line.split()]
 
             # find key value
             key = adjacents[0]
