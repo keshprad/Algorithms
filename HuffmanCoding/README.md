@@ -1,6 +1,6 @@
 ## Huffman Coding  
 _**About**_  
-The algorithm assigns codes to the symbols in order to minimize the total bits. The more frequent a word is, the smaller amount of bits in its huffman code.
+The algorithm assigns codes to the symbols in order to minimize the total bits. The more frequent a word is the smaller amount of bits in its huffman code.
 
 ---  
 
@@ -49,7 +49,7 @@ The input file describes an instance of the problem. It uses the following forma
 \[weight of symbol #2\]  
 ...  
 
-[Example Input File]( )  
+[Example Input File]( https://github.com/keshprad/Algorithms/blob/master/HuffmanCoding/testCases/test1.txt )  
 
 ---    
 

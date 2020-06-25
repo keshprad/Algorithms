@@ -12,7 +12,7 @@ _**Algorithms**_
 - [Continuous Streaming Medians Using Heaps]( https://github.com/keshprad/Algorithms/tree/master/HeapMedians )  
     - This algorithm utilizes two heaps to maintain a median as more and more numbers are streamed in.  
 - [Huffman Coding]( https://github.com/keshprad/Algorithms/tree/master/HuffmanCoding )
-    - The algorithm assigns codes to the symbols in order to minimize the total bits. The more frequent a word is, the smaller amount of bits in its huffman code.  
+    - The algorithm assigns codes to the symbols in order to minimize the total bits. The more frequent a word is the smaller amount of bits in its huffman code.  
 - [Karatsuba Multiplication]( https://github.com/keshprad/Algorithms/tree/master/KaratsubaMultiplication )  
     - This is a multiplication algorithm that is much quicker than the traditional grade school algorithm which works in quadratic running time.  
 - [Karger's Min Cut]( https://github.com/keshprad/Algorithms/tree/master/KargerMinCut )  
