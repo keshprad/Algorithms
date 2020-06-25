@@ -14,19 +14,19 @@ _**How it works**_
 ---  
 
 _**Methods**_   
-- [readFile(fileIn)]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/PrimMinSpanningTree/PrimAlg.py#L6 )  
+- readFile(fileIn)  
     - Takes in parameter for _fileIn_, a path to an input file.  
     - Reads the file of edges and their cost and adds them to the appropriate dictionary.  
-- [findMinSpanningTree()]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/PrimMinSpanningTree/PrimAlg.py#L23 )  
+- findMinSpanningTree()  
     - This method serves as the main method for this algorithm.  
-    - Invokes [sortCosts(...)]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/PrimMinSpanningTree/PrimAlg.py#L48 ) to sort self.costs in increasing order by value.  
-    - Invokes [findUnvisited(...)]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/PrimMinSpanningTree/PrimAlg.py#L51 ) to find all the initially unvisited nodes.  
+    - Invokes sortCosts(...) to sort self.costs in increasing order by value.  
+    - Invokes findUnvisited(...) to find all the initially unvisited nodes.  
     - While there are unvisited nodes, the algorithm looks at the smallest cost unvisited edge that has one node in the current tree and one node not in the current tree.  
         - Adds it to our spanning tree and adds its cost to our overall cost.  
         - Updates the visited/unvisited lists to ensure the while loops exit condition
-- [sortCosts()]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/PrimMinSpanningTree/PrimAlg.py#L48 )  
+- sortCosts()  
     - Returns a dictionary sorted by its cost(value).  
-- [findUnvisited(visited)]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/PrimMinSpanningTree/PrimAlg.py#L51 )  
+- findUnvisited(visited)  
     - Takes in a parameter _visited_ which is a list of visited nodes.  
     - Iterates through all edges and makes a list of all nodes not in _visited_.
     - Returns a list of all unvisited nodes

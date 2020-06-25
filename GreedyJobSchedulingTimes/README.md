@@ -18,26 +18,26 @@ _**How it works**_
 ---  
 
 _**Methods**_  
-- [readFile(filePath)]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/GreedyJobSchedulingTimes/Scheduling.py#L5 )  
+- readFile(filePath)  
     - Takes in _filePath_, a string representation of the path to the file.  
     - Iterates through each line, appending the weight and length of each job to it's correct array.  
-- [findMinCompletionTimes()]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/GreedyJobSchedulingTimes/Scheduling.py#L18 )  
+- findMinCompletionTimes()  
     - Serves as the main method for this algorithm.  
-    - The algorithm finds all ratios(_weight_ / _length_) with a call to [findRatios(...)]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/GreedyJobSchedulingTimes/Scheduling.py#L27 ).  
+    - The algorithm finds all ratios(_weight_ / _length_) with a call to findRatios(...).  
     - Sorts the ratios in decreasing order.  
     - Then calculates the time if we were to do jobs in order of greatest ratio.
     - Does this same algorithm for differences(_weight_ - _length_). 
         - Although this is not the correct algorithm, it's used to show differences result in a slightly worse, nonoptimal job scheduling.  
-- [findRatios()]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/GreedyJobSchedulingTimes/Scheduling.py#L27 )  
+- findRatios()  
     - Goes through each _weight_ & _length_ pair.  
     - Finds the ratio _weight_/_length_.  
     - Adds this to _ratios_.  
-- [findDiffs()]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/GreedyJobSchedulingTimes/Scheduling.py#L36 ) 
+- findDiffs() 
     - Again, using diffs will result in a nonoptimal solution and is only included to show this.  
     - Goes through each _weight_ & _length_ pair.  
     - Finds the difference weight-length.  
     - Adds this to _diffs_.  
-- [findTime(unordered, ordered)]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/GreedyJobSchedulingTimes/Scheduling.py#L45 )  
+- findTime(unordered, ordered)  
     - Takes two parameters: _unordered_, a dictionary with all ratios(or diffs) and the elements that have that ratio, and _ordered_, a list of all ratios(or diffs) sorted max to min.  
     - If there are multiple elements with the same ratio(or diff), we settle this by picking them in order of maximum weight.  
     - Finally, each job takes time _weight_\*_currLength_.

@@ -18,19 +18,19 @@ _**How it works**_
 ---  
 
 _**Methods**_  
-- [findRunningMedians(filePath)]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/HeapMedians/RunningMedians.py#L8 )  
+- findRunningMedians(filePath)  
     - Takes in parameter _filePath_, a string path to the input file.  
     - This method acts as the main method for the algorithm.  
     - Iterates through each line.  
-        - First, inserting the integer into its respective heap by invoking [insert(...)]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/HeapMedians/RunningMedians.py#L21 ).  
+        - First, inserting the integer into its respective heap by invoking insert(...).  
         - Next, we balance the heaps to ensure the size of heaps is close and to ensure the median is accurate.  
         - Our algorithm wants to maintain the median after inserting each element in order, so it'll append the current median to self.running_medians and move on to the next line.  
-- [insert(item, median)]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/HeapMedians/RunningMedians.py#L21 )  
+- insert(item, median)  
     - Takes in _item_(the number to be inserted to the heap) and _median_(the current median)
     - Inserts _item_ into _self.max_heap_ if it is lower than the current _median_. Inserts _item_ into _self.min_heap_ if it is greater than or equal to the current _median_.    
-- [balance(median)]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/HeapMedians/RunningMedians.py#L28 )  
+- balance(median)  
     - Takes a parameter _median_ which is the value of the current median.  
-    - Balances out the work [insert(...)]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/HeapMedians/RunningMedians.py#L21 ) does.  
+    - Balances out the work insert(...) does.  
     - If there are 2 more elements in _self.min_heap_(the larger half of the elements), we need to adjust the heaps to find the new median.  
     - If there is 1 more element in _self.max_heap_(the smaller half of the elements), we need to adjust the heaps to find the new median.  
     - Returns the new calculated median.  

@@ -14,7 +14,7 @@ _**How it works**_
 ---  
 
 _**Methods**_  
-- [multiplyNumbers(n1, n2)]( https://github.com/keshprad/Algorithms/blob/75535c5b925405c541b56a982f76981105489146/KaratsubaMultiplication/Karatsuba.py#L2 )  
+- multiplyNumbers(n1, n2)  
     - Takes in two numbers, _n1_ and _n2_, which will be multiplied to each other.  
     - Follows Karatsuba's formula for multiplication.  
         - _a_ is the first half of integers in _n1_, _b_ is the second half of integers in _n1_, _c_ is the first half of integers in _n2_, _d_ is the second half of integers in _n2_.  

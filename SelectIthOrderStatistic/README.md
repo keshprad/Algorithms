@@ -5,16 +5,16 @@ This algorithms finds the i-th order statistic, the i-th smallest number, in a g
 ---  
 
 _**How it works**_  
-1. The algorithm "piggybacks" on the [QuickSort algorithm]( https://github.com/keshprad/Algorithms/tree/master/QuickSort ) using it's [partition(...)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/QuickSort/Comparisons.py#L35 ) and [choose3MedianPivot(...)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/QuickSort/Comparisons.py#L45 ) methods.  
+1. The algorithm "piggybacks" on the [QuickSort algorithm]( https://github.com/keshprad/Algorithms/tree/master/QuickSort ) using it's partition(...) and choose3MedianPivot(...) methods.  
 1. After each partition it throws away the portion of the list that is known to not contain the ith order statistic.  
 1. Recursively continues with the portion of the list that's left.  
 
 ---  
 
 _**Methods**_  
-- [findIthStatistic()]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/SelectIthOrderStatistic/Selection.py#L9 )  
-    - Uses QuickSort's [choose3MedianPivot(...)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/QuickSort/Comparisons.py#L45 ) method to determine the pivot.  
-    - Calls QuickSort's [partition(...)]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/QuickSort/Comparisons.py#L35 ) method to partition around the pivot.  
+- findIthStatistic()  
+    - Uses QuickSort's choose3MedianPivot(...) method to determine the pivot.  
+    - Calls QuickSort's partition(...) method to partition around the pivot.  
         - This guarantees that the pivot will be in the sorted position since all elements on left are smaller and on right are greater. However, this doesn't mean the entire list is sorted.  
     - If the pivot is in the ith position, returns. Otherwise, the program throws away the portion of the list on the right or left of the pivot depending on which side the i-th statistic is know not to be in.  
     - Recursively computes with what is left.  

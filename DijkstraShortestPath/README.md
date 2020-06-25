@@ -15,23 +15,23 @@ _**How it works**_
 ---  
 
 _**Methods**_  
-- [readFile(filePath)]( https://github.com/keshprad/Algorithms/blob/3be082a22ee6bed98555cbd57c8b728c2d7a671c/DijkstraShortestPath/DijkstraAlg.py#L5 )  
+- readFile(filePath)  
     - Takes the parameter _filePath_, a string representing the path to the input file.  
     - Iterates through each line, initially setting the distance to infinity, the path to '', and setting the graph in the following format:
         - vertex:\[ \[adjVert1, cost1\], \[adjVert2, cost2\], ... \]
-- [findShortestPath(source)]( https://github.com/keshprad/Algorithms/blob/3be082a22ee6bed98555cbd57c8b728c2d7a671c/DijkstraShortestPath/DijkstraAlg.py#L24 )  
+- findShortestPath(source)  
     - Takes in a _source_ vertex.  
     - Serves as the main method for this algorithm.
     - Sets initial conditions for the source vertex and adds all vertices to the unvisited list.   
-    - Invokes [useDijkstra(source, vertex)]( https://github.com/keshprad/Algorithms/blob/3be082a22ee6bed98555cbd57c8b728c2d7a671c/DijkstraShortestPath/DijkstraAlg.py#L31 ).  
-- [useDijkstra(vertex, unvisited)]( https://github.com/keshprad/Algorithms/blob/3be082a22ee6bed98555cbd57c8b728c2d7a671c/DijkstraShortestPath/DijkstraAlg.py#L31 )  
+    - Invokes useDijkstra(source, vertex).  
+- useDijkstra(vertex, unvisited)  
     - Takes input _vertex_, the current vertex looked at, and _unvisited_, a list of all so far unvisited nodes.
     - Goes through all unvisited vertices adjacent to _vertex_.  
         - If the distance along this path is shorter than the current minimum, we update the _adj\_vert_'s _self.minimum_ and _self.path_.  
     - Removes the node from unvisited.
-    - Finds the next vertex to visit by invoking [nextVertex(...)]( https://github.com/keshprad/Algorithms/blob/3be082a22ee6bed98555cbd57c8b728c2d7a671c/DijkstraShortestPath/DijkstraAlg.py#L50 ).  
-    - Recursively calls [useDijkstra(...)]( https://github.com/keshprad/Algorithms/blob/3be082a22ee6bed98555cbd57c8b728c2d7a671c/DijkstraShortestPath/DijkstraAlg.py#L31 ).  
-- [nextVertex(unvisited)]( https://github.com/keshprad/Algorithms/blob/3be082a22ee6bed98555cbd57c8b728c2d7a671c/DijkstraShortestPath/DijkstraAlg.py#L50 )  
+    - Finds the next vertex to visit by invoking nextVertex(...).  
+    - Recursively calls useDijkstra(...).  
+- nextVertex(unvisited)  
     - Takes as input a list of unvisited nodes.  
     - Objective is to calculate the next vertex.  
     - Does this by looking at all unvisited vertices and selecting the one with the shortest distance.

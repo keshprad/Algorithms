@@ -14,16 +14,16 @@ _**How it works**_
 ---  
 
 _**Methods**_  
-- [readFile(f)]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/MergeSort/Inversions.py#L6 )  
+- readFile(f)  
     - Takes in a parameter for _f_, a path to an input file.  
     - Reads the file of integers and appends each integers to the self.res() array.  
-- [sortAndCount(a)]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/MergeSort/Inversions.py#L17 )  
+- sortAndCount(a)  
     - Takes _a_, a list of integers, as input  
     - Base Case: When array length is less than or equal to 1.  
         - Returns the list.  
-    - Recursively calls [sortAndCount(...)]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/MergeSort/Inversions.py#L17 ) on the left and right half of the array.  
-    - Merges the sorted right and left halves of the array by invoking [mergeAndCountSplits(...)]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/MergeSort/Inversions.py#L25 )  
-- [mergeAndCountSplits(left, right)]( https://github.com/keshprad/Algorithms/blob/7d9f160c63f6bbed509327dc18d49ff418017948/MergeSort/Inversions.py#L25 )  
+    - Recursively calls sortAndCount(...) on the left and right half of the array.  
+    - Merges the sorted right and left halves of the array by invoking mergeAndCountSplits(...).  
+- mergeAndCountSplits(left, right)  
     - Takes in as input two sorted lists, _left_ and _right_, which are supposed to represent the left-half and right-half arrays.  
     - Since both lists are sorted, in order to merge we take the lowest unvisited element from each list.  
         - The program holds two pointers to the currently inspected elements in _left_ and _right_.  
