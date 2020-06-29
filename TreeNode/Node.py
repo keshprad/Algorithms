@@ -1,3 +1,4 @@
+from binarytree import Node
 
 
 class Node:
@@ -15,3 +16,7 @@ class Node:
 
     def isLeaf(self):
         return self.left is None and self.right is None
+
+
+class NodeTypeError(Exception):
+    print(Exception)
