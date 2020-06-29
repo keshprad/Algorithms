@@ -19,6 +19,8 @@ _**Algorithms**_
     - This randomized algorithm computes the minimum cut of a graph.   
 - [Kasaraju's Strongly Connected Components]( https://github.com/keshprad/Algorithms/tree/master/KasarajuSCC )  
     - Given a directed graph representation, Kasaraju's Algorithm finds the strongly connected components of this graph.  
+- [Max Weight Independent Set]( https://github.com/keshprad/Algorithms/tree/master/MaxWeightIndependentSet )  
+    - Given a file of vertex weights, the algorithm will find the maximum weight independent set.  
 - [MergeSort]( https://github.com/keshprad/Algorithms/tree/master/MergeSort )  
     - Given a file of integers, this algorithm sorts elements in increasing order in O(nlog(n)) running time.  
 - [Prim's Minimum Spanning Tree]( https://github.com/keshprad/Algorithms/tree/master/PrimMinSpanningTree )  
