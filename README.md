@@ -19,6 +19,8 @@ _**Algorithms**_
     - This randomized algorithm computes the minimum cut of a graph.   
 - [Kasaraju's Strongly Connected Components]( https://github.com/keshprad/Algorithms/tree/master/KasarajuSCC )  
     - Given a directed graph representation, Kasaraju's Algorithm finds the strongly connected components of this graph.  
+- [The 0/1 Knapsack Problem]( https://github.com/keshprad/Algorithms/tree/master/Knapsack01 )
+    - Given a knapsack capacity and a list of items, each with a positive weight and a positive value, this dynamic programming algorithm will maximize the value of items in the knapsack while keeping the total weight under the maximum capacity. Weights or values are not necessarily unique to one item.  
 - [Max Weight Independent Set]( https://github.com/keshprad/Algorithms/tree/master/MaxWeightIndependentSet )  
     - Given a file of vertex weights, the algorithm will find the maximum weight independent set.  
 - [MergeSort]( https://github.com/keshprad/Algorithms/tree/master/MergeSort )  
