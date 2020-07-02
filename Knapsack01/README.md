@@ -4,6 +4,11 @@ Given a knapsack capacity and a list of items, each with a positive weight and a
 
 ---  
 
+_**Applications**_  
+- Need to maximize the value of something when there are limited resources.  
+
+---  
+
 _**How it works**_  
 1. The algorithm splits the problem into subproblems going through each item.  
 

@@ -4,6 +4,11 @@ Given a file of integers, this algorithm sorts elements in increasing order in O
 
 ---  
 
+_**Applications**_  
+- [SelectIthOrderStatistic]( https://github.com/keshprad/Algorithms/tree/master/SelectIthOrderStatistic )  
+
+---  
+
 _**How it works**_  
 1. The algorithm chooses a pivot element. Then, it sorts all elements simply to the left or right of the pivot based on whether it's less than or greater than the pivot.  
 
@@ -52,11 +57,6 @@ The input file describes an array of numbers. It uses the following format:
 ...  
 
 [Example Input File]( https://github.com/keshprad/Algorithms/blob/ae25d2ee685dbacb71566dac2db6f1a346456e3b/QuickSort/testCases/test5.txt )  
-
----  
-
-_**Applications**_  
-- [SelectIthOrderStatistic]( https://github.com/keshprad/Algorithms/tree/master/SelectIthOrderStatistic )  
 
 ---  
 

@@ -2,7 +2,12 @@
 _**About**_  
 This data structure makes it easier to represent clustered data points. It has methods to find the cluster header, merge clusters, and optimize the cluster representation using path compression.  
 
----
+---  
+
+_**Applications**_  
+- [SimpleClustering]( https://github.com/keshprad/Algorithms/tree/master/SimpleClustering )  
+
+---  
 
 _**Methods**_  
 - addVertex(vertex, parent)  
@@ -36,8 +41,3 @@ The class takes in as input a 2d-array that describes a list of clusters. The in
 &emsp;&emsp;\[cluster3_node1, cluster3_node2, ...\]  
 &emsp;&emsp;...  
 \]    
-
----  
-
-_**Applications**_  
-- [SimpleClustering]( https://github.com/keshprad/Algorithms/tree/master/SimpleClustering )  
