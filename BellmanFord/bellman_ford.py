@@ -37,5 +37,14 @@ class BellmanFord:
 
         result = "Vertex distance from the source(Vertex #{})".format(source+1)
         for i in range(self.numVertices):
-            result += "\n\tVertex #{}: {}".format(i+1, min_dists[i])
+            result += "\n\tVertex #{}: \n\t\tshortest path: {}".format(i+1, min_dists[i])
+            if min_dists[i] == float("inf"):
+                path = "No path from source."
+            else:
+                path = str(i+1)
+                j = i
+                while lastVertex[j] is not None:
+                    path = str(lastVertex[j]+1) + " -> " + path
+                    j = lastVertex[j]
+            result += "\n\t\tpath: " + path
         return result
