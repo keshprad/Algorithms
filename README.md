@@ -1,10 +1,12 @@
 # Algorithms
 _**About**_  
-This repository includes any algorithms I find interesting, in addition to the programming assignments for [Stanford's Algorithms Specialization]( https://www.coursera.org/specializations/algorithms ) on Coursera.  
+This repository includes any algorithms I find interesting.  
 
 ---  
 
 _**Algorithms**_  
+- [Bellman Ford's Shortest Path Algorithm]( https://github.com/keshprad/Algorithms/tree/master/BellmanFord )  
+    - Given a file of edges(some of which may have negative edge weight) representing a directed graph, the Bellman Ford algorithm will find the shortest path from a source vertex to all other vertices in the graph.  
 - [Dijkstra's Shortest Path]( https://github.com/keshprad/Algorithms/tree/master/DijkstraShortestPath )  
     - This greedy algorithm computes the shortest path from a source vertex to every other vertex in the graph. Dijkstra's algorithm doesn't work as expected with negative edges lengths.  
 - [Minimum Completion Time (Weighted Job Scheduling)]( https://github.com/keshprad/Algorithms/tree/master/GreedyJobSchedulingTimes )  
