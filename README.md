@@ -9,6 +9,8 @@ _**Algorithms**_
     - Given a file of edges(some of which may have negative edge weight) representing a directed graph, the Bellman Ford algorithm will find the shortest path from a source vertex to all other vertices in the graph.  
 - [Dijkstra's Shortest Path]( https://github.com/keshprad/Algorithms/tree/master/DijkstraShortestPath )  
     - This greedy algorithm computes the shortest path from a source vertex to every other vertex in the graph. Dijkstra's algorithm doesn't work as expected with negative edges lengths.  
+- [Floyd-Warshall All Paths Shortest Path]( https://github.com/keshprad/Algorithms/tree/master/FloydWarshallShortestPath )  
+    - Given a file of edges(some of which may have negative edge weight) representing a directed graph, the Floyd-Warshall algorithm will find the shortest path from a every vertex to every other vertex in the graph.  
 - [Minimum Completion Time (Weighted Job Scheduling)]( https://github.com/keshprad/Algorithms/tree/master/GreedyJobSchedulingTimes )  
     - A greedy algorithm which figures the optimal order in which and the optimal total time a series of jobs takes based on their weight and length.  
 - [Continuous Streaming Medians Using Heaps]( https://github.com/keshprad/Algorithms/tree/master/HeapMedians )  
