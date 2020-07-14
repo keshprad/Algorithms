@@ -35,7 +35,7 @@ The input file describes a weighted directed graph represented by edges. It uses
 \[edge3_tail\]\[edge3_head\]\[edge3_weight\]  
 ...  
 
-[Example Input File]( https://github.com/keshprad/Algorithms/blob/master/BellmanFord/testCases/test1.txt )  
+[Example Input File]( https://github.com/keshprad/Algorithms/blob/master/BellmanFordShortestPath/testCases/test1.txt )  
 
 ---  
 
