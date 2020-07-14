@@ -1,4 +1,4 @@
-from BellmanFord import bellman_ford
+from BellmanFordShortestPath import bellman_ford
 
 
 def run_BellmanFord(file_path, source):
