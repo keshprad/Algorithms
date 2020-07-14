@@ -1,4 +1,4 @@
-## Bellman-Ford Shortest Path Algorithm  
+## Bellman-Ford Shortest Path  
 _**About**_  
 Given a file of edges(some of which may have negative edge weight) representing a directed graph, the Bellman Ford algorithm will find the shortest path from a source vertex to all other vertices in the graph.  
 
