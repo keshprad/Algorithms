@@ -13,6 +13,8 @@ _**Algorithms**_
     - Given a file of edges(some of which may have negative edge weight) representing a directed graph, the Floyd-Warshall algorithm will find the shortest path from a every vertex to every other vertex in the graph.  
 - [Minimum Completion Time (Weighted Job Scheduling)]( https://github.com/keshprad/Algorithms/tree/master/GreedyJobSchedulingTimes )  
     - A greedy algorithm which figures the optimal order in which and the optimal total time a series of jobs takes based on their weight and length.  
+- [The Greedy Knapsack Problem]( https://github.com/keshprad/Algorithms/tree/master/GreedyKnapsack )
+    - Given a knapsack capacity and a list of items, each with a positive weight and a positive value, this greedy algorithm will maximize the value of items in the knapsack while keeping the total weight under the maximum capacity. The greedy solution assums items can be split into any percentage of the item. Weights or values are not necessarily unique to one item.  
 - [Continuous Streaming Medians Using Heaps]( https://github.com/keshprad/Algorithms/tree/master/HeapMedians )  
     - This algorithm utilizes two heaps to maintain a median as more and more numbers are streamed in.  
 - [Huffman Coding]( https://github.com/keshprad/Algorithms/tree/master/HuffmanCoding )
