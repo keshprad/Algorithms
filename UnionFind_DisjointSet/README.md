@@ -6,6 +6,7 @@ This data structure makes it easier to represent clustered data points. It has m
 
 _**Applications**_  
 - [SimpleClustering]( https://github.com/keshprad/Algorithms/tree/master/SimpleClustering )  
+- [KruskalMinSpanningTree]( https://github.com/keshprad/Algorithms/tree/master/KruskalMinSpanningTree )
 
 ---  
 
