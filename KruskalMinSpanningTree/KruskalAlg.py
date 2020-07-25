@@ -48,5 +48,4 @@ class KruskalMST:
     def find_ccomp_headers(self, edge):
         parent1 = self.c_components.find(edge[0])
         parent2 = self.c_components.find(edge[1])
-        edgeIsIn = [parent1, parent2]
-        return edgeIsIn
+        return [parent1, parent2]
