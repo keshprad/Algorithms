@@ -27,7 +27,7 @@ class KruskalMST:
         return edges, UnionFind.UnionFind(c_components)
 
     def findMinSpanningTree(self):
-        sorted_edges, c_components, ovr_cost = self.sort_costs(), [], 0
+        sorted_edges, ovr_cost = self.sort_costs(), 0
 
         for edge in sorted_edges:
             if edge[0] != edge[1]:  # Don't count self-loops
