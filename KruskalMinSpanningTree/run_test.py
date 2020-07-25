@@ -19,3 +19,6 @@ def runKruskalAlg(fileIn):
 runKruskalAlg("test1.txt")
 runKruskalAlg("test2.txt")
 runKruskalAlg("test3.txt")
+runKruskalAlg("test4.txt")
+runKruskalAlg("test5.txt")
+runKruskalAlg("edges.txt")
