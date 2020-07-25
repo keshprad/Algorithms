@@ -27,6 +27,8 @@ _**Algorithms**_
     - Given a directed graph representation, Kasaraju's Algorithm finds the strongly connected components of this graph.  
 - [The 0/1 Knapsack Problem]( https://github.com/keshprad/Algorithms/tree/master/Knapsack01 )
     - Given a knapsack capacity and a list of items, each with a positive weight and a positive value, this dynamic programming algorithm will maximize the value of items in the knapsack while keeping the total weight under the maximum capacity. Weights or values are not necessarily unique to one item.  
+- [Kruskal's Minimum Spanning Tree]( https://github.com/keshprad/Algorithms/tree/master/KruskalMinSpanningTree )  
+    - Kruskal's is a greedy algorithm that finds the minimum spanning tree(the edges taken to reach all nodes while minimize the total weight), given a weighted undirected graph. It's different from Prim's Alg because it considers edges regardless of whether it has one node in the spanning tree.  
 - [Max Weight Independent Set]( https://github.com/keshprad/Algorithms/tree/master/MaxWeightIndependentSet )  
     - Given a file of vertex weights, the algorithm will find the maximum weight independent set.  
 - [MergeSort]( https://github.com/keshprad/Algorithms/tree/master/MergeSort )  
