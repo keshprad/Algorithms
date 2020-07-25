@@ -31,10 +31,10 @@ class KruskalMST:
 
         for edge in sorted_edges:
             if edge[0] != edge[1]:  # Don't count self-loops
-                edgeIsIn = self.checkCycles(edge)
+                ccomp_headers = self.find_ccomp_headers(edge)
 
                 # Adds the edge if it won't create a cycle
-                if edgeIsIn[0] != edgeIsIn[1]:
+                if ccomp_headers[0] != ccomp_headers[1]:
                     self.treeEdges.append(edge)
                     self.c_components.union(edge[0], edge[1])
                     ovr_cost += edge[2]
@@ -45,7 +45,7 @@ class KruskalMST:
             return sorted(self.edges, key=lambda x: x[2])
         return sorted(edges, key=lambda x: x[2], reverse=True)
 
-    def checkCycles(self, edge):
+    def find_ccomp_headers(self, edge):
         parent1 = self.c_components.find(edge[0])
         parent2 = self.c_components.find(edge[1])
         edgeIsIn = [parent1, parent2]
