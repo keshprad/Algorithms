@@ -19,6 +19,11 @@ _**Methods**_
 
 ---  
 
+_**Helpful Videos**_  
+- [Recursive Staircase Problem]( https://www.youtube.com/watch?v=5o-kdjv7FD0 )  
+
+---  
+
 _**Input**_  
 The input takes an integer _n_ (the number of steps of the staircase) and _x_(an array of different possible steps you can take at a time).  
 
