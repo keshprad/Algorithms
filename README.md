@@ -7,6 +7,8 @@ This repository includes any algorithms I find interesting.
 _**Algorithms**_  
 - [Bellman-Ford Shortest Path]( https://github.com/keshprad/Algorithms/tree/master/BellmanFord )  
     - Given a file of edges(some of which may have negative edge weight) representing a directed graph, the Bellman Ford algorithm will find the shortest path from a source vertex to all other vertices in the graph.  
+- [Climb N Steps]( https://github.com/keshprad/Algorithms/tree/master/ClimbNSteps )
+    - Given n(the number of steps on the staircase) and x(an array of the different possible steps you can take at a time) this function outputs the number of combinations you can go up the stairs.  
 - [Dijkstra's Shortest Path]( https://github.com/keshprad/Algorithms/tree/master/DijkstraShortestPath )  
     - This greedy algorithm computes the shortest path from a source vertex to every other vertex in the graph. Dijkstra's algorithm doesn't work as expected with negative edges lengths.  
 - [Floyd-Warshall All Paths Shortest Path]( https://github.com/keshprad/Algorithms/tree/master/FloydWarshallShortestPath )  
