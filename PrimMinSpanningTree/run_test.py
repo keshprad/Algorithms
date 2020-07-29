@@ -12,7 +12,7 @@ def runPrimAlg(fileIn):
     treeEdges, ovrCost = Prim.findMinSpanningTree()
     end = t.time()
 
-    print("\tTime to run: " + str(end-start))
+    print("\tTime to run Prim's MST Alg: " + str(end-start))
     print("\tMinimum cost to span tree: " + str(ovrCost))
     print("\tTree Edges in the order spanned:")
     print("\t\t" + str(treeEdges) + "\n")
