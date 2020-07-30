@@ -1,7 +1,12 @@
 import numpy as np
 
 
-def find_levenshtein_dist(seqX=input("Enter 1st Sequence:"), seqY=input("Enter 2nd Sequence:"), gap=1, mismatch=1):
+def find_levenshtein_dist(seqX=None, seqY=None, gap=1, mismatch=1):
+    if seqX is None:
+        seqX = input("Enter 1st Sequence:")
+    if seqY is None:
+        seqY = input("Enter 2nd Sequence:")
+
     # Initialize matrix
     matrix = np.zeros(shape=(len(seqY) + 1, len(seqX) + 1), dtype=int)
 
@@ -22,8 +27,3 @@ def find_levenshtein_dist(seqX=input("Enter 1st Sequence:"), seqY=input("Enter 2
     # End result stored in the last index of the matrix
     levenshtein_dist = matrix[len(seqY), len(seqX)]
     return levenshtein_dist, matrix
-
-
-levenshtein_dist, matrix = find_levenshtein_dist()
-print(levenshtein_dist)
-print(matrix)
