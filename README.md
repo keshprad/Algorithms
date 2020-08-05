@@ -31,6 +31,8 @@ _**Algorithms**_
     - Given a knapsack capacity and a list of items, each with a positive weight and a positive value, this dynamic programming algorithm will maximize the value of items in the knapsack while keeping the total weight under the maximum capacity. Weights or values are not necessarily unique to one item.  
 - [Kruskal's Minimum Spanning Tree]( https://github.com/keshprad/Algorithms/tree/master/KruskalMinSpanningTree )  
     - Kruskal's is a greedy algorithm that finds the minimum spanning tree(the edges taken to reach all nodes while minimize the total weight), given a weighted undirected graph. It's different from Prim's Alg because it considers edges regardless of whether it has one node in the spanning tree.  
+- [Levenshtein Distance]( https://github.com/keshprad/Algorithms/tree/master/LevenshteinDistance )  
+    - The Levenshtein Distance is a dynamic programming algorithm which represents the similarity between 2 strings as a numerical value.  
 - [Max Weight Independent Set]( https://github.com/keshprad/Algorithms/tree/master/MaxWeightIndependentSet )  
     - Given a file of vertex weights, the algorithm will find the maximum weight independent set.  
 - [MergeSort]( https://github.com/keshprad/Algorithms/tree/master/MergeSort )  
