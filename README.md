@@ -37,6 +37,8 @@ _**Algorithms**_
     - Given a file of vertex weights, the algorithm will find the maximum weight independent set.  
 - [MergeSort]( https://github.com/keshprad/Algorithms/tree/master/MergeSort )  
     - Given a file of integers, this algorithm sorts elements in increasing order in O(nlog(n)) running time.  
+- [Next Lexicographical Permutation Algorithm]( https://github.com/keshprad/Algorithms/tree/master/NextLexicographicalPermutation )
+    - Given a word, this algorithm finds the lowest lexicographical permutation that's greater than the input.  
 - [Prim's Minimum Spanning Tree]( https://github.com/keshprad/Algorithms/tree/master/PrimMinSpanningTree )  
     - Given a representation of an undirected graph, this greedy algorithm finds the minimum spanning tree(the edges taken to reach all nodes while minimize the total cost).  
 - [QuickSort]( https://github.com/keshprad/Algorithms/tree/master/QuickSort )  
